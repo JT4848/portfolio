@@ -1,12 +1,9 @@
-/* Your existing styles */
-
 body, html {
   margin: 0;
   padding: 0;
 }
 
 nav {
-  /* background-color: #34495e; */
   background-color: #030903;
   height: 80px;
   width: 100%;
@@ -20,7 +17,7 @@ nav .navul {
 nav .navul .navitems {
   display: inline-block;
   line-height: 45px;
-  margin: 0 5px;
+  margin: 0 130px;
 }
 
 nav .navul .navitems .navlink {
@@ -28,6 +25,12 @@ nav .navul .navitems .navlink {
   font-size: 17px;
   padding: 9px;
   border-radius: 3px;
+  transition: transform 0.3s ease-in-out;
+  display: inline-block; 
+}
+
+nav .navul .navitems .navlink:hover {
+  transform: translateY(-3px);
 }
 
 .label {
@@ -48,6 +51,7 @@ nav .navul .navitems .navlink {
   text-align: center;
   margin-top: 50px;
   font-size: 65px;
+  text-decoration: none;
 }
 
 body {
@@ -56,13 +60,36 @@ body {
 
 #about {
   color: antiquewhite;
-  padding: 200px;
+  padding: 150px;
+  text-align: center; 
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  flex-wrap: wrap;
+}
+
+.mepic {
+  width: 300px; 
+  height: 300px; 
+  border-radius: 50%;
+  border: 10px solid #34495e; 
+  margin-right: 20px;
+}
+
+#abtmeparagraph {
+  max-width: 600px; 
+  font-size: 30px;
 }
 
 h1 {
   color: white;
   text-align: center;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 50px;
+  text-decoration: underline;
 }
 
 #portfolio {
@@ -75,8 +102,9 @@ h1 {
   background-color: #34495e;
   padding: 10px;
   border-radius: 8px;
-  margin: 10px;
+  margin: 1px;
   max-width: 300px;
+  border: 3px solid #343c4e;
 }
 
 .projectCard img {
@@ -114,13 +142,14 @@ hr {
 }
 
 .skillsCard {
-  display: flex;  /* Added this line */
-  justify-content: space-around;  /* Added this line */
+  display: flex;  
+  justify-content: space-around;  
   background-color: #34495e;
   padding: 20px;
   border-radius: 8px;
   margin: 20px;
-  max-width: 800px;  /* Adjusted max-width */
+  max-width: 800px;  
+  border: 3px solid #343c4e;
 }
 
 .group {
@@ -162,7 +191,7 @@ hr {
 }
 
 #contact {
-  padding: 200px;
+  padding: 10px;
   text-align: center;
   background-color: black;
 }
@@ -172,11 +201,7 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
-}
-
-.resume-container {
-  margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 .resume-button {
@@ -187,6 +212,7 @@ hr {
   background-color: #0077B5;
   color: #fff;
   border-radius: 5px;
+  margin-top: 10px; 
 }
 
 .resume-button:hover {
@@ -204,3 +230,124 @@ hr {
 .icons:hover {
   color: #00405F;
 }
+
+
+#scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #0077B5;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+}
+
+#scroll-to-top i {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  nav .navul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px; 
+    overflow: hidden; 
+  }
+
+  nav .navul .navitems {
+    display: inline-block;
+    margin: 0 5px;
+  }
+
+  nav .navul .navitems .navlink {
+    display: inline-block;
+    padding: 5px;
+    font-size: 14px; 
+    text-align: center;
+    white-space: nowrap; 
+  }
+
+  .label {
+    font-size: 25px;
+  }
+
+  #homepage {
+    padding: 100px;
+  }
+
+  .homepageh1 {
+    font-size: 40px;
+  }
+
+  #about {
+    padding: 100px;
+  }
+
+  .mepic {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  #portfolio {
+    display: block;
+  }
+
+  .projectCard {
+    max-width: 100%;
+  }
+
+  .skillsCard {
+    max-width: 100%;
+  }
+
+  .group {
+    margin: 20px;
+  }
+
+  .resume-container {
+    text-align: center;
+  }
+
+  .resume-button {
+    font-size: 14px;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .icons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icons {
+    font-size: 30px;
+    margin: 10px;
+  }
+
+  #contact h1 {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .contact-container {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .contact-container h1 {
+    display: inline-block;
+  }
+
+  #scroll-to-top {
+    right: 10px;
+  }
+}
+
