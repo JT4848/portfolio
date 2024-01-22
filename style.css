@@ -7,6 +7,7 @@ nav {
   background-color: #030903;
   height: 80px;
   width: 100%;
+  border: 3px solid darkslategrey;
 }
 
 nav .navul {
@@ -16,7 +17,7 @@ nav .navul {
 
 nav .navul .navitems {
   display: inline-block;
-  line-height: 45px;
+  line-height: 30px;
   margin: 0 130px;
 }
 
@@ -128,6 +129,7 @@ h1 {
 hr {
   margin-top: 20px;
   margin-bottom: 20px;
+  background-color: #34495e;
 }
 
 #portfolio h1 {
@@ -210,6 +212,7 @@ hr {
   font-size: 16px;
   text-decoration: none;
   background-color: #0077B5;
+  background-color: #34495e;
   color: #fff;
   border-radius: 5px;
   margin-top: 10px; 
@@ -221,6 +224,7 @@ hr {
 
 .icons {
   color: #0077B5;
+  color: #34495e;
   font-size: 50px;
   text-decoration: none;
   margin-right: 15px;
@@ -237,6 +241,7 @@ hr {
   bottom: 20px;
   right: 20px;
   background-color: #0077B5;
+  background-color: #34495e;
   color: #fff;
   padding: 10px;
   border-radius: 50%;
@@ -253,8 +258,9 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80px; 
+    height: 60px; 
     overflow: hidden; 
+    margin-right: 40px;
   }
 
   nav .navul .navitems {
