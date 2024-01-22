@@ -1,0 +1,206 @@
+/* Your existing styles */
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  /* background-color: #34495e; */
+  background-color: #030903;
+  height: 80px;
+  width: 100%;
+}
+
+nav .navul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav .navul .navitems {
+  display: inline-block;
+  line-height: 45px;
+  margin: 0 5px;
+}
+
+nav .navul .navitems .navlink {
+  color: white;
+  font-size: 17px;
+  padding: 9px;
+  border-radius: 3px;
+}
+
+.label {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 50px;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#homepage {
+  background-image: url(https://wallpapercave.com/wp/wp10477733.jpg);
+  padding: 200px;
+}
+
+.homepageh1 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 65px;
+}
+
+body {
+  background-color: black;
+}
+
+#about {
+  color: antiquewhite;
+  padding: 200px;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#portfolio {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.projectCard {
+  background-color: #34495e;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 10px;
+  max-width: 300px;
+}
+
+.projectCard img {
+  width: 100%;
+  height: 50%;
+  border-radius: 8px;
+}
+
+.projectDetails {
+  color: #ecf0f1;
+}
+
+.projectDetails h3 {
+  margin-top: 10px;
+}
+
+.projectDetails p {
+  margin: 10px 0;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#portfolio h1 {
+  color: #ecf0f1;
+}
+
+.skillSec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.skillsCard {
+  display: flex;  /* Added this line */
+  justify-content: space-around;  /* Added this line */
+  background-color: #34495e;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px;
+  max-width: 800px;  /* Adjusted max-width */
+}
+
+.group {
+  text-align: left;
+  margin: 60px;
+}
+
+.skillsh1 {
+  font-size: 45px;
+  margin-bottom: 0.5em;
+}
+
+.skillsList {
+  list-style-type: circle;
+  padding: 0;
+}
+
+.skillsList li {
+  color: #ecf0f1;
+  margin-bottom: 10px;
+}
+
+.githubLinks {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2c3e50;
+  color: #15191a;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.githubLinks:hover {
+  background-color: #34495e;
+}
+
+.forbgclr {
+  background-color: #030903;
+}
+
+#contact {
+  padding: 200px;
+  text-align: center;
+  background-color: black;
+}
+
+.resume-container,
+.icons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.resume-container {
+  margin-top: 20px;
+}
+
+.resume-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  background-color: #0077B5;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.resume-button:hover {
+  background-color: #00405F;
+}
+
+.icons {
+  color: #0077B5;
+  font-size: 50px;
+  text-decoration: none;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.icons:hover {
+  color: #00405F;
+}
